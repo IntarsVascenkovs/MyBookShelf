@@ -1,33 +1,77 @@
-<h1>MyBookShelf</h1>
+<header class="dashboard-header">
+  <h1>Good evening, Intars</h1>
+  <p>Here's what's happening in your library.</p>
+</header>
+
+<section class="summary-grid">
+  <article class="summary-card">
+    <span class="summary-card__label">Total Books</span>
+    <strong class="summary-card__value">245</strong>
+  </article>
+
+  <article class="summary-card">
+    <span class="summary-card__label">Wishlist</span>
+    <strong class="summary-card__value">27</strong>
+  </article>
+
+  <article class="summary-card">
+    <span class="summary-card__label">Duplicates</span>
+    <strong class="summary-card__value">14</strong>
+  </article>
+
+  <article class="summary-card">
+    <span class="summary-card__label">Incomplete Series</span>
+    <strong class="summary-card__value">9</strong>
+  </article>
+</section>
 
 <section class="dashboard-grid">
-  <article class="dashboard-card">
-    <h2>Total Books</h2>
-    <strong>245</strong>
+  <article class="dashboard-panel dashboard-panel--wide">
+    <header class="panel-header">
+      <h2>Recently Added</h2>
+      <a routerLink="/books">View all</a>
+    </header>
+
+    <p class="empty-state">No recent books yet.</p>
   </article>
 
-  <article class="dashboard-card">
-    <h2>Wishlist</h2>
-    <strong>27</strong>
+  <article class="dashboard-panel">
+    <header class="panel-header">
+      <h2>Collection Overview</h2>
+    </header>
+
+    <dl class="collection-stats">
+      <div>
+        <dt>Oldest book</dt>
+        <dd>—</dd>
+      </div>
+
+      <div>
+        <dt>Languages</dt>
+        <dd>—</dd>
+      </div>
+
+      <div>
+        <dt>Series</dt>
+        <dd>—</dd>
+      </div>
+    </dl>
   </article>
 
-  <article class="dashboard-card">
-    <h2>Duplicates</h2>
-    <strong>14</strong>
+  <article class="dashboard-panel dashboard-panel--wide">
+    <header class="panel-header">
+      <h2>Incomplete Series</h2>
+      <a routerLink="/series">View all</a>
+    </header>
+
+    <p class="empty-state">No incomplete series yet.</p>
   </article>
 
-  <article class="dashboard-card">
-    <h2>Incomplete Series</h2>
-    <strong>9</strong>
+  <article class="dashboard-panel">
+    <header class="panel-header">
+      <h2>Oldest Books</h2>
+    </header>
+
+    <p class="empty-state">No old books yet.</p>
   </article>
-</section>
-
-<section class="dashboard-section">
-  <h2>Recently Added</h2>
-  <p>No recent books yet.</p>
-</section>
-
-<section class="dashboard-section">
-  <h2>Oldest Books</h2>
-  <p>No old books yet.</p>
 </section>
