@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, signal, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { BOOK_STATUS } from '../../../../core/constants/book.constants';
@@ -8,6 +8,7 @@ import { BOOKS } from '../../../books/data/books.mock';
   selector: 'app-dashboard',
   imports: [RouterLink],
   templateUrl: './dashboard.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './dashboard.scss',
 })
 export class Dashboard {

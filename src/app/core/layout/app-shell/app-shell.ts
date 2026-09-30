@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {TopBar} from '../top-bar/top-bar';
 import {SideNav} from '../side-nav/side-nav';
 import {RouterOutlet} from '@angular/router';
@@ -11,6 +11,7 @@ import {RouterOutlet} from '@angular/router';
     RouterOutlet
   ],
   templateUrl: './app-shell.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app-shell.scss',
 })
 export class AppShell {

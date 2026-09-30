@@ -13,4 +13,5 @@ export interface Book {
   condition: BookCondition;
   status: BookStatus;
   issues?: BookIssue[];
+  createdAt: string;
 }
