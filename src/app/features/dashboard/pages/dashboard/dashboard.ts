@@ -1,4 +1,5 @@
 import { Component, signal, computed, ChangeDetectionStrategy } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { BOOKS } from '../../../books/data/books.mock';
 import {BOOK_CONDITION, BOOK_STATUS, BOOK_ISSUE} from '../../../../core/constants/book.constants';
@@ -6,7 +7,7 @@ import {LANGUAGE} from '../../../../core/constants/language.constants';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './dashboard.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './dashboard.scss',
